@@ -1,0 +1,63 @@
+name: SkyblockPlugin
+version: 9.3.9
+main: SkyblockPlugin\Main
+api: 5.0.0
+description: "A Skyblock plugin for managing islands, quests, and economy."
+author: JubayerKhan
+website: https://yourwebsite.com
+
+commands:
+  quest:
+    description: "Manage and view quests."
+    usage: "/quest"
+    permission: "skyblockplugin.command.quest"
+    permission-message: "You do not have permission to use this command."
+  is:
+    description: "Manage your skyblock island."
+    usage: "/is"
+    permission: "skyblockplugin.command.is"
+    permission-message: "You do not have permission to use this command."
+  balance:
+    description: "Check your current balance."
+    usage: "/balance"
+    permission: "skyblockplugin.command.balance"
+    permission-message: "You do not have permission to use this command."
+  deposit:
+    description: "Deposit money into your account."
+    usage: "/deposit <amount>"
+    permission: "skyblockplugin.command.deposit"
+    permission-message: "You do not have permission to use this command."
+  withdraw:
+    description: "Withdraw money from your account."
+    usage: "/withdraw <amount>"
+    permission: "skyblockplugin.command.withdraw"
+    permission-message: "You do not have permission to use this command."
+  pay:
+    description: "Transfer money to another player."
+    usage: "/pay <player> <amount>"
+    permission: "skyblockplugin.command.pay"
+    permission-message: "You do not have permission to use this command."
+
+permissions:
+  skyblockplugin.command.quest:
+    description: "Permission to use the quest command."
+    default: op
+  skyblockplugin.command.is:
+    description: "Permission to use the island management command."
+    default: op
+  skyblockplugin.command.balance:
+    description: "Permission to use the balance command."
+    default: true
+  skyblockplugin.command.deposit:
+    description: "Permission to use the deposit command."
+    default: true
+  skyblockplugin.command.withdraw:
+    description: "Permission to use the withdraw command."
+    default: true
+  skyblockplugin.command.pay:
+    description: "Permission to use the pay command."
+    default: true
+
+resources:
+  - SkyblockTemplate.zip
+  - example.txt
